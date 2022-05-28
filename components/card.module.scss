@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 3px;
+  width: 450px;
+  height: 250px;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+  position: relative;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 4px 12px;
+  }
+  .basicInfo {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(57, 57, 57, 0.7);
+    width: 180px;
+    min-height: 25%;
+    border-radius: 0px 0px 0px 3px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .title {
+      color: whitesmoke;
+      font-size: small;
+      font-weight: 700;
+    }
+    .studios {
+      padding-top: 0.3rem;
+      color: rgb(118, 199, 231);
+      font-size: x-small;
+      font-weight: 700;
+    }
+  }
+}
+
+.image {
+  .nextImage {
+    border-radius: 3px 0px 0px 3px;
+  }
+}
+
+.advancedInfo {
+  width: 270px;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}

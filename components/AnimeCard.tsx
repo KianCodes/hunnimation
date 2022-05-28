@@ -29,14 +29,14 @@ const AnimeCard = ({
           <span className={styles.title}>{titleEng ?? titleJp}</span>
           <span className={styles.studios}>
             {studios.map((studio) => (
-              <span> {studio} &nbsp;</span>
+              <span key={studio}> {studio} &nbsp;</span>
             ))}
           </span>
         </div>
       </div>
       <div className={styles.advancedInfo}>
         <div className={styles.stats}></div>
-        <p></p>
+        <p>{ synopsis }</p>
       </div>
     </div>
   )

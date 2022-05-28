@@ -24,7 +24,9 @@ export default function Home() {
   }, [season, year, page])
 
   const handleClick = (e) => {
-    let { year:updatedYear,season:updatedSeason } = JSON.parse(e.target.value)
+    let { year: updatedYear, season: updatedSeason } = JSON.parse(
+      e.target.value
+    )
     setYear(updatedYear)
     setSeason(updatedSeason)
     setPage(1)
@@ -74,15 +76,16 @@ export default function Home() {
           </button>
         </div>
         <div>
-          {Array.from(Array(pageCount).keys()).map((page) => 
-          <button onClick ={() => handlePageClick(page + 1)} >
-            {page + 1}
-          </button>
-          )}
+          {Array.from(Array(pageCount).keys()).map((page) => (
+            <button key={page + 1} onClick={() => handlePageClick(page + 1)}>
+              {page + 1}
+            </button>
+          ))}
         </div>
         <div className={styles.grid}>
           {anime.map((anime) => (
             <AnimeCard
+              key={anime.titleEng ?? anime.titleJp}
               image={anime.images.jpg.image_url}
               genre={anime.genres}
               episodes={anime}

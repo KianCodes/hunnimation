@@ -88,7 +88,7 @@ export default function Home() {
               key={anime.titleEng ?? anime.titleJp}
               image={anime.images.jpg.image_url}
               genre={anime.genres}
-              episodes={anime}
+              episodes={anime.episodes}
               titleEng={anime.title_english}
               titleJp={anime.title_japanese}
               synopsis={anime.synopsis}
@@ -102,14 +102,17 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/kiancodes"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
+          Powered by
+          <Image
+            src="/hunnysoft-pot.png"
+            alt="Hunnysoft Logo"
+            width={48}
+            height={48}
+          />
         </a>
       </footer>
     </div>

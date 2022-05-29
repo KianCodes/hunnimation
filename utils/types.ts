@@ -1,6 +1,6 @@
 export interface IAnimeCard {
     image: string
-    genre: string[]
+    genre: any[]
     episodes: number
     titleEng: string
     titleJp: string

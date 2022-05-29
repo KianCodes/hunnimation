@@ -35,8 +35,18 @@ const AnimeCard = ({
         </div>
       </div>
       <div className={styles.advancedInfo}>
-        <div className={styles.stats}></div>
-        <p>{ synopsis }</p>
+        <div className={styles.topContainer}>
+          <div className={styles.stats}>
+            <div className={styles.episodeInfo}>{episodes} Episodes</div>
+            <div className={styles.media}>Stuff goes here</div>
+          </div>
+          <p>{synopsis}</p>
+        </div>
+        <div className={styles.tags}>
+          {genre.map((genre) => (
+            <span className={styles.tag}><b>{genre.name}&nbsp;</b></span>
+          ))}
+        </div>
       </div>
     </div>
   )

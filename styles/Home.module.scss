@@ -1,8 +1,32 @@
-
-.container {
-  padding: 0 2rem;
+#header {
+  background-color: rgb(255, 228, 55);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
 }
-
+#seasons {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  .button {
+    background-color: rgba(243, 243, 243, 0.7);
+    width: 8rem;
+    height: 3rem;
+    border: 1px solid rgba(243, 243, 243, 1);
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+      background-color: rgba(243, 243, 243, .9);
+    }
+  }
+}
 .main {
   min-height: 100vh;
   padding: 4rem 0;

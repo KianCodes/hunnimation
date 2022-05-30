@@ -44,7 +44,7 @@ const AnimeCard = ({
         </div>
         <div className={styles.tags}>
           {genre.map((genre) => (
-            <span className={styles.tag}><b>{genre.name}&nbsp;</b></span>
+            <span key ={genre.name} className={styles.tag}><b>{genre.name}&nbsp;</b></span>
           ))}
         </div>
       </div>
